@@ -87,111 +87,111 @@ class ProgramManagementReview(core_models.BaseModelWithHistory):
 
     def get_cost_detail_url(self):
         return reverse(
-            "*****:program-management-review-cost-detail", kwargs={"uuid": self.uuid}
+            "Test:program-management-review-cost-detail", kwargs={"uuid": self.uuid}
         )
 
     def get_cost_history_url(self):
         return reverse(
-            "mdpmr:program-management-review-cost-history", kwargs={"uuid": self.uuid}
+            "Test:program-management-review-cost-history", kwargs={"uuid": self.uuid}
         )
 
     def get_schedule_history_url(self):
         return reverse(
-            "mdpmr:program-management-review-schedule-history",
+            "Test:program-management-review-schedule-history",
             kwargs={"uuid": self.uuid},
         )
 
     def get_performance_history_url(self):
         return reverse(
-            "mdpmr:program-management-review-performance-history",
+            "Test:program-management-review-performance-history",
             kwargs={"uuid": self.uuid},
         )
 
     def get_risk_history_url(self):
         return reverse(
-            "mdpmr:program-management-review-risk-history",
+            "Test:program-management-review-risk-history",
             kwargs={"uuid": self.uuid},
         )
 
     def get_schedule_detail_url(self):
         return reverse(
-            "mdpmr:program-management-review-schedule-detail",
+            "Test:program-management-review-schedule-detail",
             kwargs={"uuid": self.uuid},
         )
 
     def get_performance_detail_url(self):
         return reverse(
-            "mdpmr:program-management-review-performance-detail",
+            "Test:program-management-review-performance-detail",
             kwargs={"uuid": self.uuid},
         )
 
     def get_risk_detail_url(self):
         return reverse(
-            "mdpmr:program-management-review-risk-detail", kwargs={"uuid": self.uuid}
+            "Test:program-management-review-risk-detail", kwargs={"uuid": self.uuid}
         )
 
     def get_service_assessment_create_url(self):
         return reverse(
-            "mdpmr:service-assessment-create", kwargs={"pmr_uuid": self.uuid}
+            "Test:service-assessment-create", kwargs={"pmr_uuid": self.uuid}
         )
 
     def get_capabilities_assessment_create_url(self):
         return reverse(
-            "mdpmr:capabilities-assessment-create", kwargs={"pmr_uuid": self.uuid}
+            "Test:capabilities-assessment-create", kwargs={"pmr_uuid": self.uuid}
         )
 
     def get_financial_assessment_create_url(self):
         return reverse(
-            "mdpmr:financial-assessment-create", kwargs={"pmr_uuid": self.uuid}
+            "Test:financial-assessment-create", kwargs={"pmr_uuid": self.uuid}
         )
 
     def get_architecture_compliance_assessment_create_url(self):
         return reverse(
-            "mdpmr:architecture-compliance-assessment-create",
+            "Test:architecture-compliance-assessment-create",
             kwargs={"pmr_uuid": self.uuid},
         )
 
     def get_schedule_comment_create_url(self):
-        return reverse("mdpmr:schedule-comment-create", kwargs={"pmr_uuid": self.uuid})
+        return reverse("Test:schedule-comment-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_schedule_item_create_url(self):
         return reverse("mdpmr:schedule-item-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_accomplishment_create_url(self):
-        return reverse("mdpmr:accomplishment-create", kwargs={"pmr_uuid": self.uuid})
+        return reverse("Test:accomplishment-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_progress_against_accomplishments_create_url(self):
-        return reverse("mdpmr:progress-create", kwargs={"pmr_uuid": self.uuid})
+        return reverse("Test:progress-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_action_item_create_url(self):
-        return reverse("mdpmr:pmr-action-item-create", kwargs={"pmr_uuid": self.uuid})
+        return reverse("Test:pmr-action-item-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_risk_create_url(self):
-        return reverse("mdpmr:pmr-risk-create", kwargs={"pmr_uuid": self.uuid})
+        return reverse("Test:pmr-risk-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_security_categorization_item_create_url(self):
         return reverse(
-            "mdpmr:security-categorization-item-create", kwargs={"pmr_uuid": self.uuid}
+            "Test:security-categorization-item-create", kwargs={"pmr_uuid": self.uuid}
         )
 
     def get_notable_poam_item_create_url(self):
-        return reverse("mdpmr:notable-poam-item-create", kwargs={"pmr_uuid": self.uuid})
+        return reverse("Test:notable-poam-item-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_security_relevant_change_log_item_create_url(self):
         return reverse(
-            "mdpmr:security-relevant-change-log-item-create",
+            "Test:security-relevant-change-log-item-create",
             kwargs={"pmr_uuid": self.uuid},
         )
 
     def get_continuous_monitoring_activity_item_create_url(self):
         return reverse(
-            "mdpmr:continuous-monitoring-activity-item-create",
+            "Test:continuous-monitoring-activity-item-create",
             kwargs={"pmr_uuid": self.uuid},
         )
 
     def get_schedule_image_create_url(self):
         return reverse(
-            "mdpmr:schedule-image-create",
+            "Test:schedule-image-create",
             kwargs={"pmr_uuid": self.uuid},
         )
 
