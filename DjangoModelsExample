@@ -155,7 +155,7 @@ class ProgramManagementReview(core_models.BaseModelWithHistory):
         return reverse("Test:schedule-comment-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_schedule_item_create_url(self):
-        return reverse("mdpmr:schedule-item-create", kwargs={"pmr_uuid": self.uuid})
+        return reverse("Test:schedule-item-create", kwargs={"pmr_uuid": self.uuid})
 
     def get_accomplishment_create_url(self):
         return reverse("Test:accomplishment-create", kwargs={"pmr_uuid": self.uuid})
