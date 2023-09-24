@@ -1,7 +1,7 @@
 class ProgramDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     model = Program
     context_object_name = "program"
-    permission_required = ("mdpmr.view_program",)
+    permission_required = ("*****.view_program",)
     slug_field = "uuid"
     slug_url_kwarg = "uuid"
 
@@ -19,7 +19,7 @@ class ProgramDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
             "-fiscal_quarter__year", "-fiscal_quarter__number"
         )
 
-        if user.is_member(authorization.constants.IC_CIO_GROUP):
+        if user.is_member(authorization.constants.*****):
             pmrs = pmrs.exclude(status=ProgramManagementReview.Status.IN_PROGRESS)
 
         context["program_management_reviews"] = pmrs
