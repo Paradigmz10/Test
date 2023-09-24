@@ -87,7 +87,7 @@ class ProgramManagementReview(core_models.BaseModelWithHistory):
 
     def get_cost_detail_url(self):
         return reverse(
-            "mdpmr:program-management-review-cost-detail", kwargs={"uuid": self.uuid}
+            "*****:program-management-review-cost-detail", kwargs={"uuid": self.uuid}
         )
 
     def get_cost_history_url(self):
