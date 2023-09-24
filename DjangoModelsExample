@@ -67,22 +67,22 @@ class ProgramManagementReview(core_models.BaseModelWithHistory):
 
     def get_absolute_url(self):
         return reverse(
-            "mdpmr:program-management-review-detail", kwargs={"uuid": self.uuid}
+            "Test:program-management-review-detail", kwargs={"uuid": self.uuid}
         )
 
     def get_submit_url(self):
         return reverse(
-            "mdpmr:program-management-review-submit", kwargs={"uuid": self.uuid}
+            "Test:program-management-review-submit", kwargs={"uuid": self.uuid}
         )
 
     def get_complete_url(self):
         return reverse(
-            "mdpmr:program-management-review-complete", kwargs={"uuid": self.uuid}
+            "Test:program-management-review-complete", kwargs={"uuid": self.uuid}
         )
 
     def get_history_url(self):
         return reverse(
-            "mdpmr:program-management-review-history", kwargs={"uuid": self.uuid}
+            "Test:program-management-review-history", kwargs={"uuid": self.uuid}
         )
 
     def get_cost_detail_url(self):
